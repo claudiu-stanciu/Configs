@@ -1,4 +1,4 @@
-# Bash configs
+# Bash configuration
 
 ## Autocompletion with tab
 
@@ -17,7 +17,6 @@ TAB: menu-complete
 vi ~/.inputrc
 
 # include the following
-set completion-ignore-case on
 "\e[A": history-search-backward
 "\e[B": history-search-forward
 ```
