@@ -1,0 +1,26 @@
+[user]
+        name = 
+        email = 
+[color]
+    branch = auto
+    diff = auto
+    interactive = auto
+    pager = true
+    status = auto
+    ui = true
+[color "status"]
+    added = green bold
+    changed = yellow bold
+    untracked = red bold
+[push]
+    default = current
+[core]
+    autocrlf = input
+    pager = less -FRSX
+[alias]
+    co = checkout
+    st = status
+    lg = log --graph --pretty=format:'%C(yellow)%h%C(auto)%d%Creset %s %C(white)- %an, %ar%Creset'
+    sync = !git fetch upstream && git checkout master && git merge upstream/master && git push
+[credential]
+        helper = cache
